@@ -30,6 +30,11 @@ Solving XIRR on broken, real-world brokerage data is a problem every portfolio a
 - **Privacy:** All sensitive identifiers removed. Open position prices sourced from NSE closing prices on April 14, 2026.
 - **Nature:** Real-world data with structural gaps — not a synthetic or course dataset
 
+> All personally identifiable information (client ID, order ID, account details) 
+> has been removed. Only trade date, stock symbol, quantity, price, and 
+> direction (buy/sell) are retained — all of which constitute publicly 
+> available market data.
+
 ---
 
 ## ⚙️ Methodology & Approach
