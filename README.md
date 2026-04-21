@@ -104,6 +104,8 @@ No Python or external libraries used — entirely reproducible in any Excel vers
 ### Preprocessing — 831 Rows → 148 Date-Rows
 ![Preprocessing](screenshots/preprocessing.png)
 
+### Raw Tradebook — Merged_Data (831 rows, tab structure)
+![Raw Data](screenshots/raw_data.png)
 ---
 
 ## ⚠️ Limitations
