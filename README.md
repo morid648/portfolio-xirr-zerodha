@@ -36,10 +36,10 @@ Solving XIRR on broken, real-world brokerage data is a problem every portfolio a
 
 ### Preprocessing Pipeline
 **Raw Tradebook (831 rows)**
--Date-level aggregation via Pivot (Pivot_temp sheet)
--Sign convention enforcement: BUY = negative (outflow), SELL = positive (inflow)
--Chronological sort (mandatory for Excel XIRR)
--148 date-aggregated net cash flow rows (Final_data sheet)
+- Date-level aggregation via Pivot (Pivot_temp sheet)
+- Sign convention enforcement: BUY = negative (outflow), SELL = positive (inflow)
+- Chronological sort (mandatory for Excel XIRR)
+- 148 date-aggregated net cash flow rows (Final_data sheet)
 
 ### Edge Case 1 — Missing BUY Records (10 rows, Apr 10 – May 15, 2023)
 The dataset opens with 10 consecutive SELL cash flows before the first BUY appears on May 16, 2023. These represent positions purchased before the tradebook export window.
