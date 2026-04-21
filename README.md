@@ -102,7 +102,7 @@ No Python or external libraries used — entirely reproducible in any Excel vers
 ![NPV Validation](Screenshots/npv_validation.png)
 
 ### Preprocessing — 831 Rows → 148 Date-Rows
-![Preprocessing](Screenshots/preprocessing)
+![Preprocessing](Screenshots/preprocessing.png)
 
 ### Raw Tradebook — Merged_Data (831 rows, tab structure)
 ![Raw_data](Screenshots/raw_data.png)
