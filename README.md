@@ -93,19 +93,19 @@ No Python or external libraries used — entirely reproducible in any Excel vers
 ## 📸 Visual Proof
 
 ### XIRR Result (54.18%) — Final_data Sheet
-![XIRR Result](screenshots/xirr_result.png)
+![XIRR Result](Screenshots/xirr_result.png)
 
 ### Assumption Documentation Log
-![Documentation](screenshots/documentation.png)
+![Documentation](Screenshots/documentation.png)
 
 ### Goal Seek Validation — NPV ≈ 0
-![NPV Validation](screenshots/npv_validation.png)
+![NPV Validation](Screenshots/npv_validation.png)
 
 ### Preprocessing — 831 Rows → 148 Date-Rows
-![Preprocessing](screenshots/preprocessing)
+![Preprocessing](Screenshots/preprocessing)
 
 ### Raw Tradebook — Merged_Data (831 rows, tab structure)
-![Preprocessing](screenshots/raw_data.png)
+![Raw_data](Screenshots/raw_data.png)
 ---
 
 ## ⚠️ Limitations
