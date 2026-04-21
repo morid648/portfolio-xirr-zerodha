@@ -1,6 +1,6 @@
 # 📊 Portfolio XIRR Calculator — Zerodha Tradebook (Apr 2023 – Apr 2026)
 
-**Annualized Return: 54.18% | Alpha over Nifty 50: ~45.5% | 831 trades → 148 date-rows | Goal Seek workaround for Excel #NUM! error**
+**Annualized Return: 54.18% | Alpha over Nifty 50: ~45.5% | 831 trades → 80 date-rows | Goal Seek workaround for Excel #NUM! error**
 
 ---
 
@@ -39,7 +39,7 @@ Solving XIRR on broken, real-world brokerage data is a problem every portfolio a
 - Date-level aggregation via Pivot (Pivot_temp sheet)
 - Sign convention enforcement: BUY = negative (outflow), SELL = positive (inflow)
 - Chronological sort (mandatory for Excel XIRR)
-- 148 date-aggregated net cash flow rows (Final_data sheet)
+- 80 date-aggregated net cash flow rows (Final_data sheet)
 
 ### Edge Case 1 — Missing BUY Records (10 rows, Apr 10 – May 15, 2023)
 The dataset opens with 10 consecutive SELL cash flows before the first BUY appears on May 16, 2023. These represent positions purchased before the tradebook export window.
@@ -67,7 +67,7 @@ Instead of `=XIRR(cashflows, dates)`:
 | Tool | Purpose |
 |---|---|
 | Excel (Power Query) | Date aggregation, pivot, preprocessing |
-| Excel (Pivot Table) | 831 raw rows → 148 date-level rows |
+| Excel (Pivot Table) | 831 raw rows → 80 date-level rows |
 | Excel (Manual NPV Formula) | XIRR iteration substitute |
 | Excel (Goal Seek) | Solving for rate where NPV = 0 |
 
@@ -85,7 +85,7 @@ No Python or external libraries used — entirely reproducible in any Excel vers
 | Total Capital Deployed (Outflows) | ₹1,68,46,932.94 |
 | Total Capital Recovered (Inflows incl. MTM) | ₹2,52,04,755.17 |
 | Raw transactions | 831 |
-| Date-aggregated cash flow rows | 148 |
+| Date-aggregated cash flow rows | 80 |
 | Analysis period | Apr 10, 2023 – Apr 14, 2026 (~3 years) |
 
 ---
@@ -101,7 +101,7 @@ No Python or external libraries used — entirely reproducible in any Excel vers
 ### Goal Seek Validation — NPV ≈ 0
 ![NPV Validation](Screenshots/npv_validation.png)
 
-### Preprocessing — 831 Rows → 148 Date-Rows
+### Preprocessing — 831 Rows → 80 Date-Rows
 ![Preprocessing](Screenshots/preprocessing.png)
 
 ### Raw Tradebook — Merged_Data (831 rows, tab structure)
